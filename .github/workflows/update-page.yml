@@ -1,0 +1,30 @@
+name: update-page
+
+on: [push,workflow_dispatch]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: publish
+        env:
+          OSS_CONFIG: ${{ secrets.OSS_CONFIG }}
+          OSS_NAME: ${{ secrets.OSS_NAME }}
+        run: |
+          npm install
+          npm run build
+          wget http://gosspublic.alicdn.com/ossutil/1.7.1/ossutil64
+          sudo chmod 755 ossutil64
+          echo -e "${OSS_CONFIG}" > ~/.ossutilconfig
+          ./ossutil64 cp -u -r -j 20 build/ oss://${OSS_NAME}/
+          echo "此文档为离线版，请访问arduino.luatos.com获取最新版本，文档更新时间：$(TZ=UTC-8 date +%Y-%m-%d,%H:%m:%S)" > "请先读我.txt"
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: build
+          path: build
