@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'AirMCU',
-  tagline: '零基础Arduino教程，从入门到进阶，让你的创意变为现实',
+  tagline: 'AirMCU 是一个基于 AirM2M 公司 ARM-Cortex 架构微处理器兼容 Arduino 开发平台',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -90,10 +90,10 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: '文档',
+            title: '入门',
             items: [
               {
-                label: '教程',
+                label: '文档',
                 to: '/docs/intro',
               },
             ],
@@ -106,9 +106,13 @@ const config = {
                 href: 'https://github.com/orgs/Air-duino/discussions',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'QQ 交流群',
+                href: 'https://jq.qq.com/',
               },
+              // {
+              //   label: 'Twitter',
+              //   href: 'https://twitter.com/docusaurus',
+              // },
             ],
           },
           {
