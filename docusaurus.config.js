@@ -1,5 +1,6 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
+const path = require('path')
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
@@ -131,6 +132,11 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+
+    plugins: [
+      path.resolve(__dirname, './src/plugin/plugin-baidu-tongji'),
+      path.resolve(__dirname, './src/plugin/plugin-baidu-push'),
+    ],
 };
 
 module.exports = config;
