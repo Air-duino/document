@@ -2,46 +2,20 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# 快速开始
 
-Let's discover **Docusaurus in less than 5 minutes**.
+教程的目的是让你快速上手，了解如何使用Arduino IDE编写代码，上传到开发板，以及如何使用Arduino IDE的基本功能。
 
-## Getting Started
+建议未使用过Arduino IDE的用户先阅读基础教程，熟悉Arduino IDE的基本操作。
 
-Get started by **creating a new site**.
+对于有一定基础的用户，可以直接阅读进阶教程，了解如何在Air系列开发板上使用Arduino IDE进行开发。
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+新手用户可以按照章节顺序阅读，有一定基础的用户可以根据自己的需求选择性阅读。
 
-### What you'll need
+教程一共分为以下几个章节：
 
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+* 基础教程 - 介绍如何安装Arduino IDE，如何编写代码，如何上传代码，以及如何使用Arduino IDE的基本功能。
+* 进阶教程 - 介绍如何在Air系列开发板上使用Arduino IDE进行开发。
+* 应用示例 - 介绍一些具体项目的实现方法。
+* 常见问题 - 介绍一些常见问题，以及如何解决这些问题。
 
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.

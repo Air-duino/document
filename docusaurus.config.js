@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'AirMCU',
-  tagline: '简单易用的Arduino开发环境',
+  tagline: '零基础Arduino教程，从入门到进阶，让你的创意变为现实',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -70,12 +70,7 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: '文档',
-          },
+          {to: '/docs/intro', label: '文档', position: 'left'},
           {to: '/blog', label: '博客', position: 'left'},
           {
             href: 'https://github.com/Air-duino',
@@ -83,6 +78,12 @@ const config = {
             position: 'right',
           },
         ],
+      },
+      docs: {
+        sidebar: {
+          hideable: true,
+          autoCollapseCategories: true,
+        },
       },
       footer: {
         style: 'dark',
