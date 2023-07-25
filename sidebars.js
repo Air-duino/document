@@ -14,7 +14,7 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
   tutorialbasics: [
-    'intro',
+    'getting_started',
     {
       label: '基础知识',
       type: 'category',

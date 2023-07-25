@@ -71,7 +71,7 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
-          {to: '/docs/intro', label: '文档', position: 'left'},
+          {to: '/docs', label: '文档', position: 'left'},
           {to: '/blog', label: '博客', position: 'left'},
           {
             href: 'https://github.com/Air-duino',
@@ -94,7 +94,7 @@ const config = {
             items: [
               {
                 label: '文档',
-                to: '/docs/intro',
+                to: '/docs/getting_started',
               },
             ],
           },
