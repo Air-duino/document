@@ -4,29 +4,29 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: '基础知识',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: '强大性能',
+    Svg: require('@site/static/img/performance.svg').default,
     description: (
       <>
-        从软件安装到编程基础，一步步带你入门
+        32 位强大处理器，远超传统 8 位机可用资源
       </>
     ),
   },
   {
-    title: '进阶外设',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: '兼容极佳',
+    Svg: require('@site/static/img/Arduino_ide.svg').default,
     description: (
       <>
-        各种外设的使用，包括传感器、显示器、通信等
+        完美兼容 Arduino 平台，可用 Arduino IDE 编译运行，兼容全部 API 与语法
       </>
     ),
   },
   {
-    title: '应用示例',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: '多端可用',
+    Svg: require('@site/static/img/platform.svg').default,
     description: (
       <>
-        综合项目实践，让你的创意变为现实
+        全平台支持，无论是 Windows、MacOS 还是 Linux，都能轻松使用
       </>
     ),
   },
