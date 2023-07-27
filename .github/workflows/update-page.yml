@@ -1,6 +1,10 @@
 name: update-page
 
-on: [push,workflow_dispatch]
+on: 
+  push:
+    branches:
+      - main
+  workflow_dispatch:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
