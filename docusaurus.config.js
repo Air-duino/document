@@ -74,7 +74,7 @@ const config = {
           {to: '/docs/getting_started', label: '文档', position: 'left'},
           {to: '/blog', label: '文章', position: 'left'},
           {
-            href: 'https://github.com/Air-duino',
+            href: 'https://github.com/Air-duino/Arduino-AirMCU',
             label: 'GitHub',
             position: 'right',
           },
