@@ -1,8 +1,7 @@
 ---
-sidebar_position: 1
+title: 💡 点灯
+order: 1
 ---
-
-# 💡 点灯
 
 ## 简介
 
