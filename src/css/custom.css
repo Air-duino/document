@@ -28,3 +28,14 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+p>img {
+  max-width: 500px;
+  max-height: 500px;
+  display: block;
+  margin: 0 auto;
+}
+
+code {
+  font-family: Consolas,"Ubuntu Mono",Monaco,Menlo,"Andale Mono","Liberation Mono",'微软雅黑',Courier,monospace;
+}

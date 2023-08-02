@@ -4,19 +4,27 @@ sidebar_position: 1
 
 # 🚄 Arduino IDE 的安装
 
-Arduino IDE支持Windows、Mac OS X及Linux等平台，下载地址为[Software | Arduino](https://www.arduino.cc/en/software)，本文仅介绍windows下的安装方式，其他系统大同小异，请读者自行研究。
+Arduino IDE支持Windows、Mac OS X及Linux等平台，下载地址为[Software > Arduino](https://www.arduino.cc/en/software)，本文仅介绍Windows下的安装方式，其他系统大同小异，请读者自行研究，接下来针对两种方式分别介绍如何安装。
 
-Windows系统下的IDE有EXE安装版和ZIP压缩包免安装版。EXE安装版需要按步骤安装，ZIP压缩包免安装版解压后即可使用（但不会在桌面建立IDE启动图标），后者无须管理员权限也可运行使用。接下来针对两种方式分别介绍如何安装。
+:::note
 
-## windows下exe版本安装
+Windows系统下的IDE有EXE安装版和ZIP压缩包免安装版。EXE安装版需要按步骤安装，ZIP压缩包免安装版解压后即可使用（但不会在桌面建立IDE启动图标），后者无须管理员权限也可运行使用。
 
-在[Software | Arduino](https://www.arduino.cc/en/software)可以获取最新的IDE目前版本是2.10，点击如图所示的区域，下载exe版本安装包。
+:::
 
-`注：现在大部分电脑都是64位因此可以直接下载最新版本，对于32位的电脑可以在页面下翻，选择老版本进行下载安装。`
+## Windows下exe版本安装
+
+在[Software > Arduino](https://www.arduino.cc/en/software)可以获取最新的IDE目前版本是2.10，点击如图所示的区域，下载exe版本安装包。
+
+:::tip
+
+注：现在大部分电脑都是64位因此可以直接下载最新版本，对于32位的电脑可以在页面下翻，选择老版本进行下载安装。
+
+:::
 
 ![image-20230609164109637](img/image-20230609164109637.png)
 
-选择**`JUST DOWNLOAD`**仅下载，根据网速等待片刻即可下载完成。
+选择`JUST DOWNLOAD`仅下载，根据网速等待片刻即可下载完成。
 
 ![image-20230609164252675](img/image-20230609164252675.png)
 
@@ -36,13 +44,15 @@ Windows系统下的IDE有EXE安装版和ZIP压缩包免安装版。EXE安装版�
 
 ![image-20230609165202809](img/image-20230609165202809.png)
 
-
-
 ## windows下zip版本安装
 
-在[Software | Arduino](https://www.arduino.cc/en/software)可以获取最新的IDE目前版本是2.10，点击如图所示的区域，下载zip版本免安装包。
+在[Software > Arduino](https://www.arduino.cc/en/software)可以获取最新的IDE目前版本是2.10，点击如图所示的区域，下载zip版本免安装包。
 
-`注：现在大部分电脑都是64位因此可以直接下载最新版本，对于32位的电脑可以在页面下翻，选择老版本进行下载安装。`
+:::tip
+
+注：现在大部分电脑都是64位因此可以直接下载最新版本，对于32位的电脑可以在页面下翻，选择老版本进行下载安装。
+
+:::
 
 ![image-20230612140840851](img/image-20230612140840851.png)
 
