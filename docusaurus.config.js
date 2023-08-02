@@ -43,14 +43,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/Air-duino/document/blob/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/Air-duino/document/blob/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -72,7 +72,7 @@ const config = {
         },
         items: [
           {to: '/docs/getting_started', label: '文档', position: 'left'},
-          {to: '/blog', label: '博客', position: 'left'},
+          {to: '/blog', label: '文章', position: 'left'},
           {
             href: 'https://github.com/Air-duino',
             label: 'GitHub',
