@@ -12,8 +12,8 @@ export default defineUserConfig({
     // },
     "/": {
       lang: "zh-CN",
-      title: "文档演示",
-      description: "vuepress-theme-hope 的文档演示",
+      title: "AirMCU",
+      description: "AirMCU 文档",
     },
   },
 

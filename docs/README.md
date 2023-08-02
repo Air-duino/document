@@ -11,7 +11,7 @@ heroText: Arduino AirMCU
 tagline: AirMCU 是一个 AirM2M 公司 ARM-Cortex 架构微处理器的兼容 Arduino 开发平台
 actions:
   - text: 现在开始
-    link: ./docs/
+    link: ./getting_started/
     type: primary
 
 highlights:
@@ -36,5 +36,5 @@ highlights:
       - title: 全平台支持，无论是 Windows、MacOS 还是 Linux，都能轻松使用
 
 copyright: false
-footer: Theme by <a href="https://theme-hope.vuejs.press/" target="_blank">VuePress Theme Hope</a> | MIT Licensed, Copyright © 2019-present Mr.Hope
+footer: Theme by <a href="https://theme-hope.vuejs.press/" target="_blank">VuePress Theme Hope</a> | CC BY-SA 4.0 Licensed, Copyright © 2023 Air-duino 团队
 ---
