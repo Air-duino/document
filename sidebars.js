@@ -16,10 +16,11 @@ const sidebars = {
   tutorialbasics: [
     'getting_started',
     {
-      label: '基础知识',
+      label: '🚩 基础知识',
       type: 'category',
       link: {
         type: 'generated-index',
+        slug: '/category/tutorial-basics',
       },
       items: [
         {
@@ -29,10 +30,11 @@ const sidebars = {
       ],
     },
     {
-      label: '进阶教程',
+      label: '🚢 进阶教程',
       type: 'category',
       link: {
         type: 'generated-index',
+        slug: '/category/tutorial-advanced',
       },
       items: [
         {
@@ -42,10 +44,11 @@ const sidebars = {
       ],
     },
     {
-      label: '应用示例',
+      label: '🍜 应用示例',
       type: 'category',
       link: {
         type: 'generated-index',
+        slug: '/category/tutorial-extras',
       },
       items: [
         {
@@ -55,10 +58,11 @@ const sidebars = {
       ],
     },
     {
-      label: '常见问题',
+      label: '🙋‍♀️ 常见问题',
       type: 'category',
       link: {
         type: 'generated-index',
+        slug: '/category/qa',
       },
       items: [
         {

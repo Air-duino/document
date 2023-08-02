@@ -1,8 +1,8 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
 
-# Arduino IDE安装
+# 🚄 Arduino IDE 的安装
 
 Arduino IDE支持Windows、Mac OS X及Linux等平台，下载地址为[Software | Arduino](https://www.arduino.cc/en/software)，本文仅介绍windows下的安装方式，其他系统大同小异，请读者自行研究。
 
