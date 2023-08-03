@@ -12,7 +12,7 @@ export default hopeTheme({
 
   // iconAssets: "/logo.svg",
 
-  logo: "/logo.svg",
+  logo: "logo.svg",
 
   repo: "Air-duino/document",
 
