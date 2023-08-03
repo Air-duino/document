@@ -3,6 +3,7 @@ import theme from "./theme.js";
 import { commentPlugin } from "vuepress-plugin-comment2";
 import { hopeTheme } from "vuepress-theme-hope";
 import { docsearchPlugin } from "@vuepress/plugin-docsearch";
+import { searchConsolePlugin } from 'vuepress-plugin-china-search-console'
 
 export default defineUserConfig({
   base: "/",
@@ -31,6 +32,9 @@ export default defineUserConfig({
   // Enable it with pwa
   // shouldPrefetch: false,
   plugins: [
+    searchConsolePlugin({
+      baiduId: "13aae466d578c10f526a87cba8e7db3e",
+    }),
     docsearchPlugin({
       appId: "5QQU7F897X",
       apiKey: "8f8b4494d7a414b4eea44bdc3bd383b4",
