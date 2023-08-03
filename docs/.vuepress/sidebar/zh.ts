@@ -28,6 +28,11 @@ export const zhSidebar = sidebar({
       children: "structure",
     },
     {
+      text: "贡献指南",
+      prefix: "ContributionsGuide/",
+      children: "structure",
+    },
+    {
       text: "常见问题",
       icon: "book",
       // prefix: "FAQ/",
