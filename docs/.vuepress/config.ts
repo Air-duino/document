@@ -1,6 +1,8 @@
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
-// import { commentPlugin } from "vuepress-plugin-comment";
+import { commentPlugin } from "vuepress-plugin-comment2";
+import { hopeTheme } from "vuepress-theme-hope";
+import { docsearchPlugin } from "@vuepress/plugin-docsearch";
 
 export default defineUserConfig({
   base: "/",
@@ -18,9 +20,39 @@ export default defineUserConfig({
     },
   },
 
-  theme,
+
+  theme: hopeTheme({
+    plugins: {
+      copyCode: {},
+      comment: {},
+    },
+  }),
 
   // Enable it with pwa
   // shouldPrefetch: false,
-
+  plugins: [
+    docsearchPlugin({
+      appId: "5QQU7F897X",
+      apiKey: "8f8b4494d7a414b4eea44bdc3bd383b4",
+      indexName: "arduino-luatos",
+      locales: {
+        "/": {
+          placeholder: "搜索文档",
+          translations: {
+            button: {
+              buttonText: "搜索文档",
+            },
+          },
+        },
+        // "/en/": {
+        //   placeholder: "Search Documentation",
+        //   translations: {
+        //     button: {
+        //       buttonText: "Search Documentation",
+        //     },
+        //   },
+        // },
+      },
+    }),
+  ],
 });
