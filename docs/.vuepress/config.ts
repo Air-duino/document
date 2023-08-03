@@ -1,5 +1,6 @@
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
+import { commentPlugin } from "vuepress-plugin-comment2";
 
 export default defineUserConfig({
   base: "/",
@@ -21,4 +22,16 @@ export default defineUserConfig({
 
   // Enable it with pwa
   // shouldPrefetch: false,
+
+  plugins: [
+    commentPlugin({
+      provider: "Giscus",
+      repo: "Air-duino/document",
+      repoId: "R_kgDOJ8zwvQ",
+      category: "comment",
+      categoryId: "DIC_kwDOJ8zwvc4CYT9x",
+      mapping: "pathname",
+      lazyLoading: false,
+    }),
+  ],
 });
