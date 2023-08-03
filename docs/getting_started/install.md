@@ -8,7 +8,7 @@ title: 安装
 
 Arduino IDE支持Windows、Mac OS X及Linux等平台，下载地址为[Software > Arduino](https://www.arduino.cc/en/software)，本文仅介绍Windows下的安装方式，其他系统大同小异，请读者自行研究，接下来针对两种方式分别介绍如何安装。
 
-:::note
+:::tip
 
 Windows系统下的IDE有EXE安装版和ZIP压缩包免安装版。EXE安装版需要按步骤安装，ZIP压缩包免安装版解压后即可使用（但不会在桌面建立IDE启动图标），后者无须管理员权限也可运行使用。
 

@@ -1,14 +1,13 @@
 ---
-sidebar_position: 1
+title: Air001开发板入门
+order: 1
 ---
-
-# ☁ Air001开发板入门
 
 ## 连上开发板
 
 使用串口连接上板子USB另一头的串口引脚，具体可以参考：[使用串口下载](https://wiki.luatos.com/chips/air001/mcu.html#id4)
 
-:::tip
+:::details 如果购买了合宙的DAPLink调试器
 
 如果是购买的小白板和合宙的DAPLink调试器，可以直接通过排针排母相连，方向如图所示
 
