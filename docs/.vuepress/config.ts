@@ -22,12 +22,7 @@ export default defineUserConfig({
   },
 
 
-  theme: hopeTheme({
-    plugins: {
-      copyCode: {},
-      comment: {},
-    },
-  }),
+  theme,
 
   // Enable it with pwa
   // shouldPrefetch: false,
