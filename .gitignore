@@ -25,3 +25,10 @@ coverage/
 
 # macOS
 .DS_Store
+
+# Build files
+build/
+.docusaurus/
+
+# Yarn lockfile
+yarn.lock
