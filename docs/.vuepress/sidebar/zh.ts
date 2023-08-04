@@ -18,7 +18,7 @@ export const zhSidebar = sidebar({
       icon: "book",
     },
     {
-      text: "进阶教程",
+      text: "开发上手",
       collapsible: true,
       prefix: "tutorial-advanced/",
       children: "structure",
