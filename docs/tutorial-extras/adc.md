@@ -1,5 +1,6 @@
 ---
-sidebar_position: 3
+title: 测量 ADC
+order: 3
+icon: tachometer
 ---
 
-# 📏 测量 ADC

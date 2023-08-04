@@ -8,30 +8,35 @@ export const zhSidebar = sidebar({
       collapsible: true,
       prefix: "getting_started/",
       children: "structure",
+      icon: "lightbulb",
     },
     {
       text: "API 参考",
       collapsible: true,
       prefix: "library/",
       children: "structure",
+      icon: "book",
     },
     {
       text: "进阶教程",
       collapsible: true,
       prefix: "tutorial-advanced/",
       children: "structure",
+      icon: "magic",
     },
     {
       text: "应用示例",
       collapsible: true,
       prefix: "tutorial-extras/",
       children: "structure",
+      icon: "scissors",
     },
     {
       text: "贡献指南",
       collapsible: true,
       prefix: "ContributionsGuide/",
       children: "structure",
+      icon: "users",
     },
     {
       text: "常见问题",
@@ -39,6 +44,7 @@ export const zhSidebar = sidebar({
       // prefix: "FAQ/",
       // children: "structure",
       link: "/FAQ/",
+      icon: "question-circle",
     },
   ],
 });

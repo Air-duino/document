@@ -5,12 +5,7 @@ import { enSidebar, zhSidebar } from "./sidebar/index.js";
 export default hopeTheme({
   hostname: "https://arduino.luatos.com/",
 
-  author: {
-    name: "HalfSweet",
-    url: "https://halfsweet.cn/",
-  },
-
-  // iconAssets: "/logo.svg",
+  iconAssets: "fontawesome",
 
   logo: "logo.svg",
 

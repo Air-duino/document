@@ -1,6 +1,7 @@
 ---
 title: Air001开发板入门
 order: 1
+icon: bicycle
 ---
 
 ## 连上开发板

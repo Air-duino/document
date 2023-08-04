@@ -1,5 +1,7 @@
 ---
 title: 贡献指南
+order: 1
+icon: cubes
 ---
 
 我们欢迎为 AirMCU 项目做出任何贡献！

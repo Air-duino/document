@@ -1,6 +1,7 @@
 ---
-title: 💡 点灯
+title: 点灯
 order: 1
+icon: lightbulb
 ---
 
 ## 简介

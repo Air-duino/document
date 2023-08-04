@@ -1,5 +1,6 @@
 ---
-sidebar_position: 2
+title: 按键输入
+order: 2
+icon: keyboard
 ---
 
-# 🕹 按键输入

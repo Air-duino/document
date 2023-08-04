@@ -1,5 +1,7 @@
 ---
 title: 安装
+order: 2
+icon: download
 ---
 
 此文档旨在介绍关于 `AirMCU` 的相关安装方式。

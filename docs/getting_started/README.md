@@ -1,5 +1,7 @@
 ---
 title: 关于 AirMCU
+order: 1
+icon: info-circle
 ---
 
 AirMCU 是一个由社区推动，旨在适配上海合宙通信有限公司的 Arm-Cortex 系列 MCU 的 Arduino 框架。
