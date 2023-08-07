@@ -49,7 +49,7 @@ Commands:
 我们可以使用该工具为芯片进行烧录，比如下面这样：
 
 ```bansh
-> .\AirISP.exe -c air001 -p COM21 -b 115200 -e write_flash 0x08000000 gpio.hex
+> .\AirISP.exe -c air001 -p COM21 -b 115200 write_flash -e 0x08000000 gpio.hex
 AirISP v1.2.4.0
 串口 COM21
 连接中...

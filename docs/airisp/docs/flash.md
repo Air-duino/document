@@ -9,7 +9,7 @@ AirISP支持烧录`HEX`或`BIN`格式的文件到芯片的 FLASH 中。
 我们可以使用`write_flash`命令来执行烧录操作，像下面这样：
 
 ```bash
-> .\AirISP.exe -c air001 -p COM21 -b 115200 -e write_flash 0x08000000 gpio.hex
+> .\AirISP.exe -c air001 -p COM21 -b 115200 write_flash -e 0x08000000 gpio.hex
 AirISP v1.2.4.0
 串口 COM21
 连接中...
