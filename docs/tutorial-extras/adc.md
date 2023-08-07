@@ -51,7 +51,7 @@ void loop() {
 - 首先新建变量`adc_value`赋予初值0和`u`
 - 然后用`analogRead`函数来读取ADC引脚`PA_0`的值并赋给`adc_value`
 - 使用`delay(1000)`延时一秒
-- 计算实际AD的值的1000倍
+- 计算实际AD的值
 - 然后使用`prinf`函数打印出获得的引脚`PA_0`的值`adc_value`和实际AD的值`u`
 - 使用`delay(1000)`延时一秒
 
