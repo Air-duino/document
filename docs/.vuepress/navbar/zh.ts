@@ -5,10 +5,11 @@ export const zhNavbar = navbar([
   {
     text: "AirMCU 文档",
     link: "/getting_started/",
-
+    icon: "microchip",
   },
   {
-    text: "AirISP",
+    text: "AirISP 烧录工具",
     link: "/airisp/",
+    icon: "rocket",
   }
 ]);
