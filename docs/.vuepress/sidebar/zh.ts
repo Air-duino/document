@@ -29,6 +29,7 @@ export const zhSidebar = sidebar({
       collapsible: true,
       prefix: "tutorial-extras/",
       children: "structure",
+      link: "/tutorial-extras/",
       icon: "scissors",
     },
     {
@@ -41,9 +42,8 @@ export const zhSidebar = sidebar({
     {
       text: "常见问题",
       collapsible: true,
-      // prefix: "FAQ/",
-      // children: "structure",
-      link: "/FAQ/",
+      prefix: "FAQ/",
+      children: "structure",
       icon: "question-circle",
     },
   ],

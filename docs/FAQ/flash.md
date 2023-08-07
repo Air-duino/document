@@ -1,8 +1,8 @@
 ---
-sidebar_position: 1
+title: 烧录问题
+order: 1
+icon: download
 ---
-
-# 烧录问题
 
 ## 为什么烧录到一半就显示失败
 
