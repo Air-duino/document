@@ -1,6 +1,15 @@
 import { sidebar } from "vuepress-theme-hope";
 
 export const zhSidebar = sidebar({
+  "/airisp/": [
+    "",
+    {
+      text: "使用介绍",
+      collapsible: false,
+      prefix: "docs/",
+      children: "structure",
+    },
+  ],
   "/": [
     "",
     {
