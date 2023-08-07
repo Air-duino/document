@@ -10,7 +10,7 @@ icon: unlock-alt
 
 我们可以使用`read_unprotect`命令来关闭 FLASH 的读保护，像下面这样：
 
-```powershell
+```bash
 > .\AirISP.exe -c air001 -p COM21 -b 115200 read_unprotect
 AirISP v1.2.4.0
 串口 COM21
@@ -35,7 +35,7 @@ Leaving...
 
 我们可以使用`read_protect`命令来开启 FLASH 的读保护，像下面这样：
 
-```powershell
+```bash
 > .\AirISP.exe -c air001 -p COM21 -b 115200 read_protect
 AirISP v1.2.4.0
 串口 COM21

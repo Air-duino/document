@@ -12,7 +12,7 @@ icon: download
 
 此时我们就可以直接使用这个工具了：
 
-```powershell
+```bash
 > .\AirISP.exe -h
 Description:
   AirISP 是一个flash烧录工具
