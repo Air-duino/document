@@ -9,6 +9,6 @@ export const zhNavbar = navbar([
   },
   {
     text: "AirISP",
-    link: "/AirISP/",
+    link: "/airisp/",
   }
 ]);
