@@ -6,16 +6,16 @@ icon: tachometer
 
 ## 简介
 
-本章介绍使用arduino烧录Air001开发板测量ADC
+本章介绍使用arduino烧录Air001开发板测量ADC。
 
 ## 硬件准备
 
-1. 按[☁️ Air001开发板入门](/tutorial-advanced/Air001_start.html)，将Air001和DAPLink调试器使用排针排母连接
-2. 可控电压源，负极接Air001的GND引脚(地),正极接引脚PA_0(ADC)
+1. 按[☁️ Air001开发板入门](/tutorial-advanced/Air001_start.html)，将Air001和DAPLink调试器使用排针排母连接。
+2. 可控电压源，负极接Air001的GND引脚(地)、正极接引脚PA_0(ADC)。
 
 ## 软件部分
 
-按前文下载Arduino IDE、安装Air MCU，并选择接口和Air001 Dev Chip
+按前文下载Arduino IDE、安装Air MCU，并选择接口和Air001 Dev Chip。
 
 开头添加代码定义ADC引脚`PA_0`
 
@@ -42,14 +42,14 @@ void loop() {
   int u;
   adc_value = analogRead(ADC_PIN);
   delay(1000);
-  u = adc_value*3.3/1024*1000;
+  u = adc_value*3.3*1000/1023;
   Serial.printf("Current Reading on Pin(%d)=%d,Current Voltage=%d\n",ADC_PIN,adc_value,u);
   delay(1000);
 }
 ```
 
-- 首先新建变量`adc_value`赋予初值0和`u`
-- 然后用`analogRead`函数来读取ADC引脚`PA_0`的值并赋给`adc_value`
+- 首先新建变量`adc_value`赋予初值0、新建变量`u`
+- 用`analogRead`函数来读取ADC引脚`PA_0`的原始值并赋给`adc_value`
 - 使用`delay(1000)`延时一秒
 - 计算实际AD的值
 - 然后使用`prinf`函数打印出获得的引脚`PA_0`的值`adc_value`和实际AD的值`u`
@@ -57,10 +57,9 @@ void loop() {
 
 ::: tip
 
-从0V开始逐渐增大电压并在串口监视器中读出测量值，可以发现当电压增大到3.3V后继续增大电压读数达到最大值1024不再增大，
-由此可以得到一个方程: `读数 / 1024 = 实际 / 3.3`，
-即实际AD的计算公式为(单位换算为mV)
-$~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~$`实际AD = 读数 * 3.3 / 1024 * 1000`
+由于Air001的ADC为`10bit`，所以`ADC原始值`的范围为`0-1023`。  
+由此可以得到一个方程: `原始值 / 1023 = 实际 / 3.3`，
+即实际AD的计算公式为(单位换算为mV)：`实际AD = 原始值 * 3.3 * 1000 / 1023`
 
 :::
 
