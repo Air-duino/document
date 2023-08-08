@@ -20,6 +20,19 @@ icon: terminal
 
 向 FLASH 的指定地址开始，刷入固件，固件文件可以为`HEX`或`BIN`文件。
 
+### write_flash 命令参数
+
+`write_flash`命令有如下参数：
+
+1. `--erase-all`或者`-e`，作用是在烧录的时候擦除全部flash，建议添加。
+2. `--no-progress`或者`-p`，作用是在下载的时候禁止显示进度条。
+
+:::tip
+
+若MCU中已刷入过其他固件，烧录新固件时请务必加上`-e`擦除参数。
+
+:::
+
 ## read_unprotect
 
 关闭 FLASH 的读保护，此时将自动擦除 FLASH 上的所有内容。

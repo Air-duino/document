@@ -12,10 +12,6 @@ AirISP 是一个通过串口与芯片ISP功能进行交互，从而实现擦除�
 
 前往[GitHub Release页面](https://github.com/Air-duino/AirISP/releases/latest)下载最新版本的AirISP工具。
 
-::: note
-如果是Windows用户，您可能需要带上`.exe`后缀。例如`AirISP.exe -h`
-:::
-
 解压后可以得到`AirISP`：
 
 ```bash
@@ -48,7 +44,7 @@ Commands:
 
 我们可以使用该工具为芯片进行烧录，比如下面这样：
 
-```bansh
+```bash
 > .\AirISP.exe -c air001 -p COM21 -b 115200 write_flash -e 0x08000000 gpio.hex
 AirISP v1.2.4.0
 串口 COM21

@@ -25,3 +25,9 @@ icon: star
 
 - default_reset：Air001 开发板的默认控制方式，原因参考上一小节。
 - direct_connect：串口的 RTS 连接 RST，直接控制设备重启。
+
+## 环境变量
+
+### ENG_LANG
+
+当ENG_LANG环境变量为`1`时，将强制将输出打印的信息更改为英文；否则将按系统语言自动判断为中文还是英文。
