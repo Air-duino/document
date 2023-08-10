@@ -89,3 +89,72 @@ AirMCU 上的 GPIO 外设支持中断。
 ```cpp
 void attachInterrupt(uint32_t pin, callback_function_t callback, uint32_t mode)
 ```
+
+- `pin`：要配置的引脚号。
+- `callback`：中断回调函数。
+- `mode`：中断触发模式。可以是以下值之一：
+
+  - `CHANGE`：引脚状态发生变化时触发中断。
+  - `RISING`：引脚状态从低电平变为高电平时触发中断。
+  - `FALLING`：引脚状态从高电平变为低电平时触发中断。
+  - `LOW`：引脚状态为低电平时触发中断。
+  - `HIGH`：引脚状态为高电平时触发中断。
+
+### detachInterrupt
+
+要从特定引脚分离中断，请使用 `detachInterrupt` 函数来分离 GPIO。
+
+```cpp
+void detachInterrupt(uint32_t channel)
+```
+
+- `channel`：要分离的引脚号。
+
+## 示例代码
+
+### GPIO 输入和输出模式
+
+```cpp
+const auto LED = PB0;
+const auto BUTTON = PF4;
+
+uint8_t stateLED = 0;
+
+void setup() {
+    pinMode(LED, OUTPUT);
+    pinMode(BUTTON,INPUT_PULLUP);
+}
+
+void loop() {
+   if(!digitalRead(BUTTON)){
+     stateLED = stateLED^1;
+    digitalWrite(LED,stateLED);
+  }
+}
+```
+
+### GPIO 中断
+
+```cpp
+const auto ledPin = PB0;
+ 
+const auto interruptPin = PF4;  
+ 
+volatile byte state = LOW;
+ 
+void setup() {
+  pinMode(ledPin, OUTPUT);
+ 
+  pinMode(interruptPin, INPUT_PULLDOWN); 
+ 
+  attachInterrupt(digitalPinToInterrupt(interruptPin), blink, CHANGE);
+}
+ 
+void loop() {
+  digitalWrite(ledPin, state);
+}
+ 
+void blink() {
+  state = !state;
+}
+```
