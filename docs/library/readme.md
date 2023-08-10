@@ -32,3 +32,8 @@ title: API 参考文档
 ## APIs
 
 AirMCU 提供了一些独特的 API，如本节所述：
+
+[ADC](./adc.md)
+[GPIO](./gpio.md)
+[I2C](./i2c.md)
+[PWM](./pwm.md)
