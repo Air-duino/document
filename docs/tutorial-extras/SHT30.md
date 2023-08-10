@@ -1,5 +1,5 @@
 ---
-title: I²C读取SHT30温湿度
+title: 温湿度计 SHT30
 order: 12
 icon: umbrella
 ---
