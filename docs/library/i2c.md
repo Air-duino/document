@@ -394,3 +394,79 @@ void requestEvent()
 }
 
 ```
+
+## 进阶用法
+
+默认情况下，只有一个 Wire 实例可用，它使用了默认的I2C引脚，具体可以参考开发板的手册。要使用第二个 I2C 端口，应在代码中在 `setup()` 函数之前声明 `TwoWire` 对象：
+
+```cpp
+#include <Wire.h>
+
+TwoWire Wire2(SDA_PIN, SCL_PIN);
+
+void setup() {
+  Wire2.begin(); 
+}
+
+void loop() {
+  Wire2.beginTransmission(0x71);
+  Wire2.write('v');
+  Wire2.endTransmission();
+  delay(1000);
+}
+```
+
+### 默认 I2C 引脚
+
+默认 I2C 接口引脚在 `PeripheralPins.c` 文件中配置。
+
+示例（对于文件 PeripheralPins.c 中的 `AIR001_DEV`）：
+
+```c
+#ifdef HAL_I2C_MODULE_ENABLED
+WEAK const PinMap PinMap_I2C_SDA[] = {
+  {PA_2,  I2C, AIR_PIN_DATA(AIR_MODE_AF_OD, GPIO_NOPULL, GPIO_AF12_I2C)},
+  {PA_7,  I2C, AIR_PIN_DATA(AIR_MODE_AF_OD, GPIO_NOPULL, GPIO_AF12_I2C)},
+  {PA_9,  I2C, AIR_PIN_DATA(AIR_MODE_AF_OD, GPIO_NOPULL, GPIO_AF12_I2C)},
+  {PA_10, I2C, AIR_PIN_DATA(AIR_MODE_AF_OD, GPIO_NOPULL, GPIO_AF6_I2C)},
+  {PA_12, I2C, AIR_PIN_DATA(AIR_MODE_AF_OD, GPIO_NOPULL, GPIO_AF6_I2C)},
+  {PB_7, I2C, AIR_PIN_DATA(AIR_MODE_AF_OD, GPIO_NOPULL, GPIO_AF6_I2C)},
+  {PB_8, I2C, AIR_PIN_DATA(AIR_MODE_AF_OD, GPIO_NOPULL, GPIO_AF12_I2C)},
+  {PF_0, I2C, AIR_PIN_DATA(AIR_MODE_AF_OD, GPIO_NOPULL, GPIO_AF12_I2C)},
+  {NC,    NP,   0}
+};
+#endif
+
+#ifdef HAL_I2C_MODULE_ENABLED
+WEAK const PinMap PinMap_I2C_SCL[] = {
+  {PA_3,  I2C, AIR_PIN_DATA(AIR_MODE_AF_OD, GPIO_NOPULL, GPIO_AF12_I2C)},
+  {PA_8,  I2C, AIR_PIN_DATA(AIR_MODE_AF_OD, GPIO_NOPULL, GPIO_AF12_I2C)},
+  {PA_9, I2C, AIR_PIN_DATA(AIR_MODE_AF_OD, GPIO_NOPULL, GPIO_AF6_I2C)},
+  {PA_10, I2C, AIR_PIN_DATA(AIR_MODE_AF_OD, GPIO_NOPULL, GPIO_AF12_I2C)},
+  {PA_11, I2C, AIR_PIN_DATA(AIR_MODE_AF_OD, GPIO_NOPULL, GPIO_AF6_I2C)},
+  {PB_6, I2C, AIR_PIN_DATA(AIR_MODE_AF_OD, GPIO_NOPULL, GPIO_AF6_I2C)},
+  {PB_8, I2C, AIR_PIN_DATA(AIR_MODE_AF_OD, GPIO_NOPULL, GPIO_AF6_I2C)},
+  {PF_1, I2C, AIR_PIN_DATA(AIR_MODE_AF_OD, GPIO_NOPULL, GPIO_AF12_I2C)},
+  {NC,    NP,   0}
+};
+#endif
+```
+
+### 重新定义I2C引脚
+
+因为它们被定义为 WEAK，所以您可以在代码文件中重新定义它们，而不是更改 `PeripheralPins.c` 文件中的值。您还可以使用 `AIR_PIN_DATA()` 的第二个参数启用/禁用内部上拉电阻。
+
+### I2C 缓冲区管理
+
+默认情况下，I2C 缓冲区都在 Arduino API 上对齐：32 字节。
+
+但是我们最多可以传输 255 个字节：
+
+- 在主模式下：RX 和 TX 缓冲区将在需要时自动增长，彼此独立，并且独立于其他 I2C 实例。
+
+    从应用程序的角度来看无事可做。
+
+- 在从模式下：借助开关 I2C_TXRX_BUFFER_SIZE ，可以使用 hal_conf_extra.h 或 build_opt.h （在编译时）静态重新定义 RX 和 TX 缓冲区大小
+
+    所有 I2C 实例都受此编译开关更改的影响。
+
