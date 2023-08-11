@@ -1,5 +1,6 @@
 ---
 title: I2C
+icon: tag
 ---
 
 ## 关于

@@ -23,7 +23,7 @@ AirMCU 是一个由社区推动，旨在适配上海合宙通信有限公司的 
 
 :::tip
 
-我们不会介绍常见的 Arduino API，要查看 Arduino 参考文档，请考虑阅读[官方文档](https://www.arduino.cc/reference/en/)
+AirMCU特有的接口，可以参考左侧的 [API 参考](/library/)，余下的接口，可以参考 [Arduino 官方文档](https://www.arduino.cc/reference/en/)
 
 :::
 

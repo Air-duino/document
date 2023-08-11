@@ -1,5 +1,6 @@
 ---
 title: ADC
+icon: tachometer
 ---
 
 ADC ，即analog to digital converter（模数转换器）是一种非常常见的外设，用于将电压等模拟信号转换为数字形式，以便微控制器可以读取和处理。

@@ -1,5 +1,6 @@
 ---
 title: PWM
+icon: car
 ---
 
 PWM，即Pulse Width Modulation（脉宽调制）是是利用微处理器的数字输出来对模拟电路进行控制的一种非常有效的技术，广泛应用在测量、通信、工控等方面。

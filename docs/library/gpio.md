@@ -1,5 +1,6 @@
 ---
 title: GPIO
+icon: lightbulb
 ---
 
 ## About
