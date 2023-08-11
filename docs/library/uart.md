@@ -108,7 +108,7 @@ AirMCU 有多个 U(S)ART 外设。为方便起见，U(S)ARTx 编号用于定义 
 - Serial4 为 UART4
 - ...对于 LPUART1 ，为 SerialLP1
 
-默认情况下，只有一个 Serialx 实例可映射到通用 Serial 名称。
+默认情况下，只有一个 Serialx 实例可映射到通用 Serial 名称。需要注意的是，一般我们习惯上使用`Serial1`来作为全局的`Serial`对象。
 
 要使用第二个串行端口，代码中应中在 `setup()` 函数之前声明 `HardwareSerial` 对象：
 
