@@ -20,18 +20,18 @@ export const zhSidebar = sidebar({
       icon: "lightbulb",
     },
     {
-      text: "API 参考",
-      collapsible: true,
-      prefix: "library/",
-      children: "structure",
-      icon: "book",
-    },
-    {
       text: "开发上手",
       collapsible: true,
       prefix: "tutorial-advanced/",
       children: "structure",
       icon: "magic",
+    },
+    {
+      text: "API 参考",
+      collapsible: true,
+      prefix: "library/",
+      children: "structure",
+      icon: "book",
     },
     {
       text: "应用示例",

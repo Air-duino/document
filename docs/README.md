@@ -8,7 +8,7 @@ bgImageDark: /bg/6-dark.svg
 bgImageStyle:
   background-attachment: fixed
 heroText: Arduino AirMCU
-tagline: AirMCU 是一个 AirM2M 公司 ARM-Cortex 架构微处理器的兼容 Arduino 开发平台
+tagline: AirMCU 是一个合宙（AirM2M）ARM-Cortex 架构微处理器的兼容 Arduino 开发平台
 actions:
   - text: 现在开始 🚀
     link: ./getting_started/
