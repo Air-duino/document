@@ -1,6 +1,6 @@
 ---
 title: I2C
-icon: tag
+icon: mail-reply-all
 ---
 
 ## 关于

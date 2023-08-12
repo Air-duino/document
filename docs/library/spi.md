@@ -1,5 +1,6 @@
 ---
 title: SPI
+icon: object-group
 ---
 
 ## 关于

@@ -1,5 +1,6 @@
 ---
 title: UART
+icon: exchange
 ---
 
 ## 关于
