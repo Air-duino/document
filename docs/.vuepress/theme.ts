@@ -10,6 +10,7 @@ export default hopeTheme({
   logo: "logo.svg",
 
   repo: "Air-duino/Arduino-AirMCU",
+  docsRepo: "Air-duino/document",
 
   docsDir: "docs",
 
