@@ -1,6 +1,9 @@
 # Node modules
 node_modules/
 
+#use pnpm please
+package-lock.json
+
 # Build files
 packages/*/lib/
 
