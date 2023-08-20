@@ -45,7 +45,7 @@ void pinMode(uint32_t ulPin, uint32_t ulMode)
   - `INPUT_PULLUP`：输入模式，但是在引脚上启用内部上拉电阻。
   - `INPUT_PULLDOWN`：输入模式，但是在引脚上启用内部下拉电阻。
   - `INPUT_ANALOG`：模拟输入模式。
-  - `OUTPUT_OPENDRAIN`：输出模式，但是在引脚上启用开漏输出。
+  - `OUTPUT_OPEN_DRAIN`：输出模式，但是在引脚上启用开漏输出。
 
 ### 内部上拉和下拉
 
