@@ -49,3 +49,35 @@ void analogReference(eAnalogReference ulMode) ;
 ```cpp
 void analogReadResolution(uint8_t bits);
 ```
+
+### analogReadMillivolts
+
+此函数用于获取给定引脚上的实际电压值（单位为毫伏）。
+
+```cpp
+uint32_t analogReadMillivolts(uint32_t ulPin);
+```
+
+- `ulPin` GPIO 引脚
+
+该函数将返回模拟电压值。
+
+### analogReadTempSensor
+
+此函数用于获取内部温度传感器的实际温度值（单位为摄氏度）。
+
+```cpp
+uint32_t analogReadTempSensor(void);
+```
+
+该函数将返回模拟温度值。
+
+### analogReadVref
+
+此函数用于获取内部参考电压的实际电压值（单位为毫伏）。
+
+```cpp
+uint32_t analogReadVref(void);
+```
+
+该函数将返回模拟电压值。
