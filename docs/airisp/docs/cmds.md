@@ -39,4 +39,15 @@ icon: terminal
 
 ## read_protect
 
-开启 FLASH 的读保护，此时将无法读取 FLASH 的内容。
+开启 FLASH 的读保护，此时将无法读取或写入 FLASH 的内容。
+
+## read_flash <芯片FLASH地址> <读取长度> <固件文件>
+
+向 FLASH 的指定地址开始，读取固件存入对应文件，固件文件只能为`BIN`文件。
+
+### read_flash 命令参数
+
+`read_flash`命令有如下参数：
+
+1. `--overwrite`或者`-o`，作用是如果文件已存在，则覆盖文件，否则拒绝继续读取。
+2. `--no-progress`或者`-p`，作用是在下载的时候禁止显示进度条。
