@@ -42,6 +42,13 @@ export const zhSidebar = sidebar({
       icon: "scissors",
     },
     {
+      text: "高级用法",
+      collapsible: true,
+      prefix: "Advanced/",
+      children: "structure",
+      icon: "cogs",
+    },
+    {
       text: "贡献指南",
       collapsible: true,
       prefix: "ContributionsGuide/",
