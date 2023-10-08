@@ -12,6 +12,8 @@ AirISP 是一个通过串口与芯片ISP功能进行交互，从而实现擦除�
 
 前往[GitHub Release页面](https://github.com/Air-duino/AirISP/releases/latest)下载最新版本的AirISP工具。
 
+::: details Arch 包管理安装
+
 Arch Linux 及其衍生版可以安装 [AUR airisp-git](https://aur.archlinux.org/packages/airisp-git)。
 
 **注：命令行名称按 Arch Linux 规范应该是小写，安装后命令行为：`airisp`。**
@@ -19,6 +21,8 @@ Arch Linux 及其衍生版可以安装 [AUR airisp-git](https://aur.archlinux.or
 ```bash
 yay -Syu airisp
 ```
+
+:::
 
 解压或安装后可以得到 `AirISP`：
 
