@@ -8,17 +8,17 @@ icon: certificate
 
 目前，AirMCU 通过 Arduino API 支持以下外设。
 
-|外设|Air001|Air32F103|备注|
+|外设|Air001|Air32F103|Air401|备注|
 |:---:|:---:|:---:|:---:|
-|ADC|✅|🔨||
-|DAC|❌|🔨||
-|GPIO|✅|✅||
-|I2C|✅|🔨||
-|Servo|✅|🔨||
-|SPI|✅|🔨||
-|PWM|✅|🔨||
-|UART|✅|🔨||
-|USB|❌|🔨||
+|ADC|✅|🔨|🔨||
+|DAC|❌|🔨|🔨||
+|GPIO|✅|✅|✅||
+|I2C|✅|🔨|🔨||
+|Servo|✅|🔨|🔨||
+|SPI|✅|🔨|🔨||
+|PWM|✅|🔨|🔨||
+|UART|✅|🔨|✅||
+|USB|❌|🔨|❌||
 
 - ✅：支持
 - 🔨：开发中
@@ -39,3 +39,4 @@ AirMCU 提供了一些独特的 API，如本节所述：
 
 - [air001](https://air001.cn)
 - [air32f103](https://air32.cn)
+- [air401](https://air401.cn)
