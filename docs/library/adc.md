@@ -22,7 +22,7 @@ uint32_t analogRead(uint32_t pin);
 ```
 
 - `pin` GPIO 引脚或 ADC 通道。
-- - ADC的内部通道可以为`ATEMP` (内部温度传感器)、`AVBAT` (VBAT电压)、`AREF` (内部参考电压)。
+- - ADC的内部通道可以为`ATEMP` (内部温度传感器)、`AVBAT` (VBAT电压)、`AVREF` (内部参考电压)。
 
 该函数将返回模拟原始值。
 
